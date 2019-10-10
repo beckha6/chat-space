@@ -1,20 +1,6 @@
 .head
 .side
-  .side__header
-    .side__header__box
-      .side__header__box__user-name
-        seo
-      .side__header__box__menu
-        .side__header__box__menu--new-group
-          %i.fa.fa-edit
-        .side__header__box__menu--edit-user 
-          %i.fa.fa-cog 
-  .side__groups
-    .side__groups__group
-      .side__groups__group--group-name
-        sample
-      .side__groups__group--latest-message
-        Good bye world!
+  = render 'shared/side_bar'
 .html
 .main
   .main__header
