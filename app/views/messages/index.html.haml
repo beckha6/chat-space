@@ -1,7 +1,7 @@
+.html
 .head
 .side
   = render 'shared/side_bar'
-.html
 .main
   .main__header
     .main__header__left-box
@@ -18,14 +18,17 @@
           seo
         .main__messages__message__upper-info--data
           2016/09/21 06:16:55
-      .main__messages__message__text
+      .main__messages__message__text  
         Hello world!
   .main__form
     .main__form__new
       .main__form__new__input-box
         .main__form__new__input-box--text
-          type a message
-        .main__form__new__input-box--image
-          %i.fa.fa-image
-      .main__form__new__submit-btn
-        Send
+          = form_for [@group, @message] do |f|
+            = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+            .main__form__new__input-box--mask
+              = f.label :image, class: 'form__mask__image' do
+                = fa_icon 'picture-o', class: 'icon'
+                = f.file_field :image, class: 'hidden'
+            .main__form__new__submit-btn
+              = f.submit 'Send', class: 'form__submit'
