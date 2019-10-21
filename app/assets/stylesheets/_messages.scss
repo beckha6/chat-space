@@ -85,7 +85,7 @@ html{
       background-color: #fafafa;
       overflow: scroll;
       &__message{
-        padding-bottom:40px; 
+        padding-bottom:40px;
         &__upper-info{
           display: flex;
           margin-bottom: 10px;
@@ -103,7 +103,7 @@ html{
             font-size: 14px;
             color: #434a54;
         }
-      } 
+      }
     }
     &__form{
       height: 90px;
@@ -114,31 +114,44 @@ html{
         &__input-box{
           position: relative;
           width: 100%;
-          background-color: #fafafa;
           &--text{
-            height: 50px;
+            height: 100%;
             width: 100%;
-            padding: 0 10px;
             color: #434a54;
             line-height: 50px;
+            float: left;
           }
           &--mask{
+            float: right;
             font-size: 1.3rem;
-            position: absolute;
             top: 10px;
-            right: 10px;
           }
-        }
-        &__submit-btn{
-          width: 100px;
-          height: 50px;
-          margin-left: 15px;
-          background-color: #38aef0;
-          color: #fafafa;
-          line-height: 50px;
-          text-align: center;
+          &__form__submit{
+            width: 100px;
+            height: 50px;
+            margin-left: 10px;
+            background-color: #38aef0;
+            color: #fafafa;
+            line-height: 50px;
+            text-align: center;
+          }
         }
       }
     }
   }
-}
+ }
+ .hidden{
+  display: none;
+ }
+ .form__message{
+  height: 50px;
+  width: 85%;
+  background-color:white;
+ }
+ .form__mask__image{
+  position: absolute;
+  right: 180px;
+ }
+ a,ul{
+   color: #fafafa;
+ }

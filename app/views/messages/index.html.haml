@@ -26,9 +26,7 @@
         .main__form__new__input-box--text
           = form_for [@group, @message] do |f|
             = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-            .main__form__new__input-box--mask
-              = f.label :image, class: 'form__mask__image' do
-                = fa_icon 'picture-o', class: 'icon'
-                = f.file_field :image, class: 'hidden'
-            .main__form__new__submit-btn
-              = f.submit 'Send', class: 'form__submit'
+            = f.label :image, class: 'form__mask__image' do
+              = fa_icon 'picture-o', class: 'icon'
+              = f.file_field :image, class: 'hidden'
+            = f.submit 'Send', class: 'main__form__new__input-box__form__submit'
