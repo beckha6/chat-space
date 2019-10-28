@@ -35,7 +35,6 @@ $(function(){
       .done(function(data){
         var html = buildHTML(data);
         $('.main__messages').append(html);
-        $("#message_content").val('');
         $("#new_message")[0].reset();
         $('.main__messages').animate({ scrollTop: $('.main__messages')[0].scrollHeight})
       })
