@@ -18,12 +18,6 @@ $(function() {
     $("#user-search-result").append(html);
   }
   function addDeleteUser(name, id) {
-    // let html = `
-    // <div class="ChatMember clearfix" id="${id}">
-    //   <p class="ChatMember__name">${name}</p>
-    //   <div class="ChatMember__remove ChatMember__button" data-user-id="${id}" data-user-name="${name}">削除</div>
-    // </div>`;
-
     let html = `<div class='chat-group-user'>
     <input name='group[user_ids][]' type='hidden' value='${id}'>  
     <p class='chat-group-user__name'>${name}</p>
