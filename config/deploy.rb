@@ -1,9 +1,9 @@
 # config valid only for current version of Capistrano
 # capistranoのバージョンを記載。固定のバージョンを利用し続け、バージョン変更によるトラブルを防止する
-lock '<3.11.2>'
+lock '3.11.2'
 
 # Capistranoのログの表示に利用する
-set :application, '<chat-space>'
+set :application, 'chat-space'
 
 # どのリポジトリからアプリをpullするかを指定する
 set :repo_url,  'git@github.com:beckha6/chat-space.git'
