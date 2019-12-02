@@ -60,7 +60,6 @@ $(function(){
         insertHTML = buildHTML(message);
         $('.main__messages').append(insertHTML);
       })
-      $('.main__messages').animate({scrollTop: $('.main__messages')[0].scrollHeight});
       })
     .fail(function() {
       alert('自動更新に失敗しました');
