@@ -117,24 +117,28 @@ html{
       &__new{
         display: flex;
         &__input-box{
+          display: flex;
           position: relative;
           width: 100%;
-          &--text{
-            height: 100%;
+          &__message{
+            padding: 0 40px 0 10px;
+            height: 50px;
             width: 100%;
             color: #434a54;
             line-height: 50px;
-            float: left;
+            border-style: none;
           }
-          &--mask{
-            float: right;
+          &__mask__image{
+            top: 0px;
+            right: 170px;
             font-size: 1.3rem;
-            top: 10px;
+            position: absolute;
+            cursor: pointer;
           }
-          &__form__submit{
-            width: 100px;
+          &__submit{
+            width: 110px;
             height: 50px;
-            margin-left: 10px;
+            margin-left: 15px;
             background-color: #38aef0;
             color: #fafafa;
             line-height: 50px;
@@ -148,15 +152,15 @@ html{
  .hidden{
   display: none;
  }
- .form__message{
-  height: 50px;
-  width: 85%;
-  background-color:white;
- }
- .form__mask__image{
-  position: absolute;
-  right: 180px;
- }
+.new_message{
+   padding: 0 40px 0 10px;
+   height: 50px;
+   width: 100%;
+   color: #434a54;
+   line-height: 50px;
+   border-style: none;
+   display: flex;
+}
  a,ul{
    color: #fafafa;
  }

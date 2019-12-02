@@ -20,11 +20,11 @@
     = render @messages
   .main__form
     .main__form__new
-      .main__form__new__input-box 
-        .main__form__new__input-box--text{'data-group-id':@group.id}
-          = form_for [@group, @message] do |f|
-            = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-            = f.label :image, class: 'form__mask__image' do
+      .main__form__new__input-box{'data-group-id':@group.id}
+        = form_for [@group, @message] do |f|
+          = f.text_field :content, class: 'main__form__new__input-box__message', placeholder: 'type a message'
+          .main__form__new__input-box__mask
+            = f.label :image, class: 'main__form__new__input-box__mask__image' do
               = fa_icon 'picture-o', class: 'icon'
               = f.file_field :image, class: 'hidden'
-            = f.submit 'Send', class: 'main__form__new__input-box__form__submit'
+          = f.submit 'Send', class: 'main__form__new__input-box__submit'
